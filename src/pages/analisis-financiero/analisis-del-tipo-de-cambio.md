@@ -19,7 +19,7 @@ breadcrumb: Análisis
 <p style="font-weight: 500;">Análisis de tipo de cambio.</p>
 
 
-Tras el anuncio de la inflación en México, el peso mexicano registró pérdidas del 0.38%, situándose en 17.09 pesos por dólar. Se espera que el Banco de México (Banxico) tome una decisión sobre su política monetaria para mantener su tasa de referencia en 11.25%.
+Tras el anuncio de la inflación en México, el peso mexicano registró pérdidas del 0.38%, situándose en 17.09 pesos por dólar. Se espera que el Banco de México (Banxico) tome una decisión sobre su política monetaria para mantener su tasa de referencia en 11.25%.a
 
 Durante el día de hoy, la cotización USD/MXN fluctuó entre 17.03 y 17.10 pesos por dólar. El dólar estadounidense mostró cierta fortaleza en los mercados globales de divisas, con un aumento del 0.30% en el índice del dólar.
 
