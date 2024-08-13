@@ -1,0 +1,88 @@
+---
+const Firstpost = await Astro.glob('../pages/analisis-financiero/Coinbase-en-Apuros-Usuarios-Reportan-Saldos-de-0-Mientras-el-BTC-Supera-los-63k.md');
+const Secondpost = await Astro.glob('../pages/analisis-financiero/analisis-del-tipo-de-cambio.md');
+const Thirdpost = await Astro.glob('../pages/analisis-financiero/femsa-forward-planea-invertir-170000-millones-de-pesos-en-mexico.md');
+
+const GridFirstpost = await Astro.glob('../pages/analisis-financiero/los-precios-del-petroleo-se-mantienen-estables.md');
+const GridSecondpost = await Astro.glob('../pages/analisis-financiero/cifras-del-ipc-superan-las-expectativas-del-consenso.md');
+const GridThirdpost = await Astro.glob('../pages/analisis-financiero/persiste-la-preocupacion-en-torno-a-la-economia-estadounidense.md');
+const GridFourpost = await Astro.glob('../pages/analisis-financiero/perspectivas-cautelosas-del-mercado-de-valores-en-mexico.md');
+const GridFivepost = await Astro.glob('../pages/analisis-financiero/congreso-de-la-Ciudad-de-mexico -aprueba-nuevas-leyes-de-desarrollo-urbano.md');
+const GridSixpost = await Astro.glob('../pages/analisis-financiero/banxico-mantiene-su-tasade-interes-interbancaria.md');
+
+import '../styles/analisis.css'
+---
+
+<section class="analisis">
+    <div class="analisis-cont">
+        <div class="analisis-text-grid">
+            <h1>Análisis Financiero</h1>
+            <h3><a href="/analisis-financiero">Ver más > </a></h3>
+        </div>
+        <div class="analisis-grid">
+
+            <div class="analisis-post1">
+              
+                <div class="analisis-first-image"></div>
+                <h1>{Firstpost.map((post) =><a href={post.url}>{post.frontmatter.title}</a>)}</h1>
+            </div>
+            
+                <div class="analisis-post2">
+                    
+                    <div class="analisis-second-image"></div>
+                    <h1>{Secondpost.map((post) =><a href={post.url}>{post.frontmatter.title}</a>)}</h1>
+         
+                </div>
+            
+            
+                <div class="analisis-post3">
+                  
+                    <div class="analisis-third-image"></div>
+                    <h1>{Thirdpost.map((post) =><a href={post.url}>{post.frontmatter.title}</a>)}</h1>
+                </div>
+           
+        </div>
+
+       <!--  
+        <div class="second-grid-analisis">
+
+            <div class="grid-post-analisis">
+                <div class="sub-grid">
+                    <div class="analisis-grid-first-image"></div>
+                    <h1>{GridFirstpost.map((post) =><a href={post.url}>{post.frontmatter.title}</a>)}</h1>
+                </div>
+
+                <div class="sub-grid">
+                    <div class="analisis-grid-second-image"></div>
+                    <h1>{GridSecondpost.map((post) =><a href={post.url}>{post.frontmatter.title}</a>)}</h1>
+                </div>
+                 </div>
+
+                 <div class="grid-post-analisis">
+                    <div class="sub-grid">
+                        <div class="analisis-grid-third-image"></div>
+                        <h1>{GridThirdpost.map((post) =><a href={post.url}>{post.frontmatter.title}</a>)}</h1>
+                    </div>
+    
+                    <div class="sub-grid">
+                        <div class="analisis-grid-four-image"></div>
+                        <h1>{GridFourpost.map((post) =><a href={post.url}>{post.frontmatter.title}</a>)}</h1>
+                    </div>
+                    </div>
+
+                    <div class="grid-post-analisis">
+                        <div class="sub-grid">
+                            <div class="analisis-grid-five-image"></div>
+                            <h1>{GridFivepost.map((post) =><a href={post.url}>{post.frontmatter.title}</a>)}</h1>
+                        </div>
+        
+                        <div class="sub-grid">
+                            <div class="analisis-grid-six-image"></div>
+                            <h1>{GridSixpost.map((post) =><a href={post.url}>{post.frontmatter.title}</a>)}</h1>
+                        </div>
+                        </div>
+        </div> -->
+
+    </div>
+    
+</section>

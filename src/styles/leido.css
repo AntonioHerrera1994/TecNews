@@ -1,0 +1,255 @@
+.leido {
+    background-color: #e8eadf;
+    padding-top: 5px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.leido-cont{
+    margin: 0 auto;
+  overflow: hidden;
+  padding-right: 50px;
+  padding-left: 50px;
+
+}
+
+.leido-grid{
+    padding: 2rem;
+  display:grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 7rem;
+      
+}
+
+.text-grid h1{
+    font-size: 1.8rem;
+}
+
+.text-grid{
+    padding: 2rem;
+  display:grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 2rem;
+     
+}
+
+td{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1rem;
+}
+
+input{
+    font-family: 'Helvetica', sans-serif;
+    background-color: #eae8df;
+    border-radius: 25px;
+    border-color: #0F1416 ;
+    margin-top: 10px;
+    padding: 6px;
+    margin-bottom: 15px;
+    font-size: .9rem;
+}
+
+select{
+    font-family: 'Helvetica', sans-serif;
+    background-color: #e8eadf;
+    border-radius: 25px;
+    border-color: #0F1416 ;
+    margin-top: 10px;
+    padding: 6px;
+    margin-bottom: 15px;
+    font-size: .9rem;
+}
+
+.currency{
+    margin-left: 20.6rem;
+    margin-top: 60px;
+}
+
+.pos-grid{
+    
+  display:grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+      gap: 3rem;
+    margin-left: -34px;
+      margin-right: -640px;
+}
+
+.pos-grid a{
+    color: #0F1416;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-align: justify;
+
+}
+
+
+.pos-grid p{
+    font-size: .8rem;
+    
+}
+
+.text-grid h3{
+    margin-left: 502px;
+    font-size: .8rem;
+    margin-right: -600px;
+    margin-top: 25px;
+}
+
+td a{
+    display:none;
+}
+
+/************** Imagenes ***************/
+
+.leido-first-image{
+    background-image: url('../assets/crypto/crypto185.webp');
+    background-size: cover;
+    background-position: center;
+    height: 340px;
+    width: 100%;
+}
+
+.leido-second-image{
+    background-image: url('../assets/tecnologia/tec13.webp');
+    background-size: cover;
+    background-position: center;
+    height: 340px;
+    width: 100%;
+}
+
+.leido-third-image{
+    background-image: url('../assets/pw/pw2.webp');
+    background-size: cover;
+    background-position: right 5% bottom 60%;
+    height: 340px;
+    width: 100%;
+}
+
+/************** Movil ***************/
+
+@media screen and (min-width:300px) and (max-width:800px) {
+    .leido-cont{
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+  
+      .leido-grid{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    padding-left:10px;
+    padding-right: 10px;
+    width: auto;
+      }
+
+      .text-grid{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    padding-left:10px;
+    padding-right: 10px;
+    width: auto;
+      }
+
+      .pos-grid{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    padding-left:10px;
+    padding-right: 10px;
+    margin-top:-80px;
+    margin-right:30px;
+    width: auto;
+      }
+
+    
+    .currency{
+        margin-left: 0;
+        margin-top: -100px;
+    }
+
+    .leido-first-image{
+        height: 230px;
+        width: 100%;
+    }
+    
+    .leido-second-image{
+        height: 230px;
+        width: 100%;
+    }
+    
+    .leido-third-image{
+        height: 230px;
+        width: 100%;
+    }
+
+
+}
+@media screen and (min-width:800px) and (max-width:1200px) {
+    .currency{
+        width:30%;
+        margin-left: 0;
+    margin-top: -6rem;
+    }
+
+    .leido-cont{
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+  
+      .leido-grid{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    padding-left:10px;
+    padding-right: 10px;
+    width: auto;
+      }
+
+      .text-grid{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    padding-left:10px;
+    padding-right: 10px;
+    width: auto;
+      }
+
+      .pos-grid{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    padding-left:10px;
+    padding-right: 10px;
+    margin-top:-80px;
+    margin-right:30px;
+    width: auto;
+      }
+}
+
+/************** Pantalla grande ***************/
+
+@media only screen and (min-width:1400px) {
+ 
+
+    .currency{
+        margin-left: 400px;
+        margin-top: 60px;
+    }
+
+    .leido-cont{
+        margin: 0 auto;
+      overflow: hidden;
+      padding-right: 90px;
+      padding-left: 90px;
+    }
+
+    .leido-first-image{
+        height: 340px;
+        width: 100%;
+    }
+    
+    .leido-second-image{
+        height: 340px;
+        width: 100%;
+    }
+        
+    .leido-third-image{
+        height: 340px;
+        width: 100%;
+    }
+    .currency{
+        margin-left: 21rem;
+        margin-top: 3.8rem;
+    }
+}

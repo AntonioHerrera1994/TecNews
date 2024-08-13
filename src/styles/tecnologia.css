@@ -1,0 +1,232 @@
+.tecnologia{
+    background-color: #e8eadf;
+    padding-bottom: 80px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.tec-cont{
+    margin: 0 auto;
+  overflow: hidden;
+  padding-right: 50px;
+  padding-left: 50px;
+
+}
+
+.tec-text-grid{
+    padding: 2rem;
+    display:grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+        gap: 5rem; 
+}
+
+.tec-text-grid a{
+    color: #0F1416;
+    
+}
+
+.tec-text-grid h1{
+    font-size: 1.8rem;
+}
+
+
+.tec-text-grid h3{
+    text-align: right;
+    font-size: .8rem;
+}
+
+.tec-grid{
+    margin-top:-30px;
+    padding: 2rem;
+    display:grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 1rem; 
+}
+
+.tec-post{
+    margin-right: 30px;
+}
+
+.tec-post a{
+    color: #0F1416;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.tec-post p{
+    color: #0F1416;
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+.tec-post h4{
+    color: #0F1416;
+    text-decoration: none;
+    font-size: .7rem;
+}
+
+
+.blog-section{
+    margin-top: -5.5rem;
+     padding-bottom  : 3rem;
+     padding-right: 50px;
+     padding-left: 50px;
+     margin-right: -.5rem;
+     margin-left: -.5rem;
+     background-color: #eae8df;
+     overflow: hidden; 
+ }
+ 
+ ul {
+     list-style:none;
+ }
+ 
+ .blogs{
+   padding-top: 5rem;
+   display:grid;
+   grid-template-columns: repeat(4,minmax(0,1fr));
+       gap: 2rem;
+       
+ }
+ 
+ .blogs p{
+     font-size: .82rem;
+     
+ }
+ 
+ a {
+     text-decoration: none;
+     color: #0F1416;
+
+    
+     
+ }
+
+ .blog h4{
+    font-size: .8rem;
+   }
+ 
+ @media screen and (min-width:320px) and (max-width:800px) {
+     .blogs{
+       
+         padding: 0;
+         display:grid;
+         grid-template-columns: repeat( 1,minmax(0,1fr));
+             gap: 2rem;
+           
+     } 
+ 
+     .blog-section{
+         margin-top: -2.5rem;
+          padding-bottom  : 3rem;
+          padding-right: 50px;
+          padding-left: 50px;
+          margin-right: -.5rem;
+          margin-left: -2.5rem;
+          background-color: #eae8df;
+          overflow: hidden; 
+      }
+ 
+  
+ }
+/*************** Movil ***************/
+
+@media screen and (min-width:320px) and (max-width:800px) {
+    .tec-cont{
+        width: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+    }
+
+    .tec-grid{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        padding-left:10px;
+        padding-right: 10px; 
+        width: auto;
+    }
+
+    .tec-text-grid{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        padding-left:10px;
+        padding-right: 10px; 
+        padding-top: 0;
+        gap:0;
+    }
+
+    .tec-text-grid h3{
+        text-align: left;
+        margin-top: -.5rem;
+    }
+    
+
+    .tec-first-image{
+        height: 230px;
+        width: 100%;
+    }
+
+    .tec-second-image{
+        height: 230px;
+        width: 100%;
+    }
+    
+    .tec-third-image{
+        height: 230px;
+        width: 100%;
+    }
+    
+    .tec-four-image{
+        height: 230px;
+        width: 100%;
+        
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+    .tec-grid{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        padding-left:10px;
+        padding-right: 10px; 
+        width: auto;
+    }
+
+    .tec-text-grid{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        padding-left:10px;
+        padding-right: 10px; 
+        padding-top: 0;
+        gap:0;
+    }
+}
+
+/*************** Pantalla grande ***************/
+
+@media only screen and (min-width:1400px) {
+    .tec-cont{
+        margin: 0 auto;
+      overflow: hidden;
+      padding-right: 90px;
+      padding-left: 90px;
+    
+    }
+    .tec-first-image{
+        height: 230px;
+        width: 100%;
+    }
+
+    .tec-second-image{
+        height: 230px;
+        width: 100%;
+    }
+    
+    .tec-third-image{
+        height: 230px;
+        width: 100%;
+    }
+    
+    .tec-four-image{
+        height: 230px;
+        width: 100%;
+        
+    }
+    
+}

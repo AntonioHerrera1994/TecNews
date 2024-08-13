@@ -1,0 +1,155 @@
+.pw{
+    background-color: #e8eadf;
+    padding-bottom: 20px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -20px;
+}
+
+.pw-cont{
+    margin: 0 auto;
+  overflow: hidden;
+  padding-right: 50px;
+  padding-left: 50px;
+
+}
+
+.pw-text-grid{
+    padding: 2rem;
+    display:grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+        gap: 2rem; 
+}
+
+.pw-grid{
+    padding: 2rem;
+  display:grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+      gap: 2rem;
+      margin-top: -40px;
+      
+}
+
+.pw-text-grid h1{
+  font-size:  1.8rem;
+}
+
+.pw-text-grid h3{
+    text-align: right;
+}
+
+
+.pw-pst p{
+  column-count: 2;
+column-gap: 2.5rem;
+text-align: justify;
+line-height: 22px;
+}
+
+.pw-pst a{
+  color: #0F1416;
+  text-decoration: none;
+  font-size: 2.6rem;
+}
+
+.pw-text-grid a{
+  font-size: .8rem;
+  color: #0F1416;
+  text-decoration: none;
+}
+
+/*************** Imagen***************/
+
+.pw-first-image{
+ width: 100%;
+ height: 100%;
+  background-image: url('../assets/pw/pw1.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/*************** Movil ***************/
+
+@media screen and (min-width:320px) and (max-width:800px) {
+  .pw-cont{
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .pw-grid{
+    grid-template-columns: repeat(1,minmax(0,1fr));
+padding-left:10px;
+padding-right: 10px;
+  }
+
+  .pw-text-grid{
+    grid-template-columns: repeat(1,minmax(0,1fr));
+        padding-left:10px;
+        padding-right: 10px; 
+        padding-top: 0;
+        gap:0;
+}
+
+.pw-text-grid h3{
+  text-align: left;
+  margin-top: -.5rem;
+}
+
+
+.pw-pst a{
+  font-size: 2rem;
+}
+ .pw-pst p{
+  column-count: 1;
+column-gap: 20px;
+text-align: justify;
+line-height: 30px;
+}
+
+.pw-first-image{
+  width: 100%;
+  height: 15rem;
+ }
+ 
+}
+
+/*************** Pantalla grande ***************/
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+  .pw-grid{
+    grid-template-columns: repeat(1,minmax(0,1fr));
+padding-left:10px;
+padding-right: 10px;
+  }
+
+  .pw-first-image{
+    width: 100%;
+    height: 15rem;
+   }
+
+  .pw-text-grid{
+    grid-template-columns: repeat(1,minmax(0,1fr));
+        padding-left:10px;
+        padding-right: 10px; 
+        padding-top: 0;
+        gap:0;
+}
+}
+
+@media only screen and (min-width:1400px) {
+  .pw-cont{
+    margin: 0 auto;
+  overflow: hidden;
+  padding-right: 90px;
+  padding-left: 90px;
+
+}
+
+.pw-first-image{
+  width: 100%;
+  height: 30rem;
+ }
+
+
+}
