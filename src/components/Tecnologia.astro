@@ -1,0 +1,42 @@
+---
+
+import '../styles/tecnologia.css';
+
+
+const { pageTitle } = Astro.props;
+const blogs = await Astro.glob('../pages/tecnologia/*.md');
+
+const sortedFiles = blogs.sort((a, b) => {
+  const bDate = new Date(a.frontmatter.pubDate);
+  const aDate = new Date(b.frontmatter.pubDate);
+
+  return aDate - bDate;
+});
+
+---
+
+<section class="tecnologia">
+    <div class="tec-cont">
+        <div class="tec-text-grid">
+            <h1>Tecnología</h1>
+            <h3><a href="/tecnologia">Ver más > </a></h3>
+        </div>
+        <section class="blog-section" id="blog-section">
+            <div class="grid-cont">
+              <ul class="blogs">
+                {blogs.slice(0, 4).map((blog) => (
+                  <li>
+                    <article class="blog">
+                      <img src={blog.frontmatter.image.url} alt="blog.frontmatter.image.alt" width="100%" />
+                      <a href={blog.url} class=""><h3>{blog.frontmatter.title}</h3></a>
+                      <h4>{blog.frontmatter.author} | {blog.frontmatter.date}</h4>
+                      <p>{blog.frontmatter.description}</p>
+                    </article>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+    </div>
+
+</section>

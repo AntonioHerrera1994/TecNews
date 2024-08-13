@@ -1,0 +1,62 @@
+---
+const { pageTitle } = Astro.props;
+const blogs = await Astro.glob('../pages/crypto/*.md');
+
+const sortedFiles = blogs.sort((a, b) => {
+  const bDate = new Date(a.frontmatter.pubDate);
+  const aDate = new Date(b.frontmatter.pubDate);
+
+  return aDate - bDate;
+});
+
+
+import '../styles/crypto.css'
+
+---
+
+<section class="crypto">
+<div class="crypto-cont">
+    <div class="crypto-text-grid">
+        <h1>Crypto</h1>
+        <h3><a href="/crypto">Ver más > </a></h3>
+    </div>
+
+    <section class="blog-section-crypto" id="blog-section2">
+        <div class="grid-cont2-crypto">
+          <ul class="blogs2-crypto">
+            {blogs.slice(0, 1).map((blog) => (
+              <li>
+                <article class="blog">
+                  <img src={blog.frontmatter.image.url} alt="blog.frontmatter.image.alt" width="100%" />
+                  <p>{blog.frontmatter.author} | {blog.frontmatter.date}</p>
+                  <div class="meta-desc-post1">
+                  <a href={blog.url} class=""><h3>{blog.frontmatter.title}</h3></a>
+                  <p>{blog.frontmatter.description}</p>
+                </div>
+                </article>
+              </li>
+            ))}
+          </ul>
+      
+          <div>
+          <ul class="blogs3-crypto">
+            {blogs.slice(1, 4).map((blog) => (
+              <li>
+                <article class="blog3-crypto">
+                  <img src={blog.frontmatter.image.url} alt="blog.frontmatter.image.alt" width="100%" />
+                  <div class="meta-description-crypto">
+                  <p>{blog.frontmatter.author} | {blog.frontmatter.date}</p>
+                  <a href={blog.url} class=""><h3>{blog.frontmatter.title}</h3></a>
+                  <p>{blog.frontmatter.description}</p>
+                </div>
+                </article>
+              </li>
+            ))}
+          </ul>
+      
+        </div>
+        </div>
+      </section>
+
+    </div> 
+</section>

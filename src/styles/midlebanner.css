@@ -1,0 +1,197 @@
+.midlebanner{
+    background-color: #e8eadf;
+    padding-bottom: 20px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.midle-cont{
+    margin: 0 auto;
+  overflow: hidden;
+  padding-right: 50px;
+  padding-left: 50px;
+
+}
+
+
+.midle-grid{
+    margin-top:-50px;
+    padding: 1rem 6rem;
+    display:grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    background-image: url('../assets/banner2.png');
+    background-size: cover;
+    background-position: right 20% bottom 17%;
+}
+
+.midle-izq{
+    margin-right: 11rem;
+    margin-left: 1.9rem;
+    margin-top: 4.3rem;
+}
+
+.midle-der{
+    margin-top: 307px;
+    margin-left: 150px;
+}
+
+.midle-der p{
+    font-size: 1rem;
+    color: #e8eadf;
+    margin-left: 25px;
+}
+
+
+.midle-grid h1{
+    font-size: 2.9rem;
+    margin-bottom: 60px;
+}
+
+.midle-izq a{
+   color: #0F1416;
+   text-decoration: none;
+    border: solid;
+    border-width: 1px;
+    border-radius: 25px;
+  padding:10px 15px;
+    background-color: #e8eadf;
+    border-color: #e8eadf;
+}
+
+.midle-izq i{
+    color: #0F1416;
+}
+
+/************** Movil **************/
+@media screen and (min-width:320px) and (max-width:800px) {
+    .midle-cont{
+        width: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+    }
+    
+    
+    .midle-grid{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        padding-left:10px;
+        padding-right: 8rem; 
+        padding-top: 8rem;
+        width: auto;
+        background-position: right 100% bottom 80%;
+    }
+
+    .midle-izq{
+        margin: auto;
+    }
+
+    br{
+        display: none;
+    }
+    .midle-grid h1{
+        font-size: 2rem;
+        margin:0rem 1rem;
+        margin-bottom: 60px;
+        text-align: left;
+    }
+
+    .midle-grid p{
+        font-size: 1.1rem;
+        margin:0rem 1rem;
+        margin-bottom: 60px;
+        text-align: left;
+    }
+
+    .midle-grid {
+      
+        margin-bottom: 60px;
+        text-align: left;
+    }
+
+    .midle-der{
+        margin-left:0;
+        margin-right:0;
+        margin-bottom:0;
+        margin-top:2.5rem;
+    }
+
+    .midle-der p{
+        font-size: 1rem;
+        color: #e8eadf;
+        margin-left: 25px;
+        text-align:left;
+        margin-bottom:-.1rem;
+    }
+    .mc-field-group{
+        margin:0;
+    }
+
+  .optionalParent{
+    margin: 0;
+  }
+
+  
+    
+}
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+    .midle-grid{
+        margin-top:0;
+        padding: 3rem 6rem;
+        display:grid;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        background-image: url('../assets/banner2.png');
+        background-size: cover;
+        background-position: right 20% bottom 17%;
+    }
+    
+    .midle-izq{
+        margin:0;
+    }
+
+    #mc_embed_signup{
+    width: 1rem;
+    }
+    .mc-field-group{
+        margin:0;
+    }
+
+    .midle-der{
+        margin-left:0;
+        margin-right:0;
+        margin-bottom:0;
+        margin-top:2.5rem;
+    }
+
+    
+}
+
+/************** Pantalla grande **************/
+
+@media only screen and (min-width:1400px) {
+    .midle-cont{
+        margin: 0 auto;
+          overflow: hidden;
+          padding-right: 160px;
+          padding-left: 160px;
+    
+    }
+
+    .midle-grid{
+        margin-top:-50px;
+        padding: 3rem 6rem;
+       
+    }
+
+    .midle-izq{
+        margin: auto;
+    }
+    
+    .midle-der{
+        margin-left:8rem;
+        margin-right:0;
+        margin-bottom:0;
+        margin-top:15.8rem;
+    }
+
+}
+
